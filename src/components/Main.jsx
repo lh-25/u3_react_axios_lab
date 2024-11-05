@@ -6,6 +6,7 @@ import StarshipList from "./StarshipList"
 import FilmsList from "./FilmsList"
 import PlanetsList from "./PlanetsList"
 import CharactersList from "./CharactersList"
+import StarshipDetails from "./StarshipPage"
 import Nav from "./Nav"
 
 
@@ -52,6 +53,7 @@ export default function Main () {
     <Routes>
     <Route path='/' element={<Home  />} />
     <Route path='/starships' element={<StarshipList starships={starships}/>} />
+    <Route  path='starships/:starshipId' element={<StarshipDetails starships={starships} />}/>
     <Route path='/films' element={<FilmsList films={films}/>} />
     </Routes>
     <Route path='/planets' element={<PlanetsList planets={planets}/>} />
