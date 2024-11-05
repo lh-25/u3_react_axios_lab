@@ -1,12 +1,12 @@
-
+import { Link } from "react-router-dom"
 export default function PlanetsList ({planets}) {
 
   return !planets ? (
     <h1>Loading Please Wait</h1>) : (
-  <div className="grid">
+  <div>
     {planets.map((planet,index) => (
-      <div key={index} className="card">
-        <h2>{planet.name}</h2>
+      <div key={index}>
+        <Link to={`/planets/${planet.name}`}>{planet.name}</Link>
         <h3>Crew: {planet.climate}</h3> 
         <p>Model: {planet.terrain}</p>
         <p>Manufacture: {planet.rotation_period}</p>

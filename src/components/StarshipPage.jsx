@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom"
 
-export default function StarshipDetails ({starships}) {
-  const {starshipId} = useParams()
-  console.log(starshipId)
-  const singleStarship = starships.find((ship) => ship._id === Number(starshipId))
+export default function CharacterPage ({starships}) {
+  const {starshipName} = useParams()
+  console.log(starshipName)
+  const singleStarship = starships.find((ship) => ship.name === starshipName)
   console.log(singleStarship)
 
   return !singleStarship ? (<h1>Starship Not Found!</h1>) : (
