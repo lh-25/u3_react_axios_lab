@@ -11,15 +11,15 @@ export default function filmPage ({films}) {
       <h1>Film: {singlefilm.title}</h1>
       <h2>Details</h2>
       <dl>
-      <dt>Crew:</dt> 
+      <dt>Opening Crawl:</dt> 
       <dd>{singlefilm.opening_crawl} </dd>
-        <dt>Model:</dt>
+        <dt>Episode:</dt>
         <dd> {singlefilm.episode_id}</dd>
-        <dt>Manufacture:</dt>
+        <dt>Director:</dt>
         <dd>{singlefilm.director}</dd>
-        <dt>Cost: </dt>
+        <dt>Producer: </dt>
         <dd>{singlefilm.producer} </dd>
-        <dt>Passengers:</dt>
+        <dt>Release Date:</dt>
         <dd>{singlefilm.release_date}</dd>
       </dl>
     </>

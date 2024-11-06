@@ -8,18 +8,18 @@ export default function CharacterPage ({characters}) {
 
   return !singlecharacter ? (<h1>character Not Found!</h1>) : (
     <>
-      <h1>character: {singlecharacter.name}</h1>
+      <h1>Character: {singlecharacter.name}</h1>
       <h2>Details</h2>
       <dl>
-      <dt>Crew:</dt> 
+      <dt>Birth Year:</dt> 
       <dd>{singlecharacter.birth_year} </dd>
-        <dt>Model:</dt>
+        <dt>Height:</dt>
         <dd> {singlecharacter.height}</dd>
-        <dt>Manufacture:</dt>
+        <dt>Hair Color:</dt>
         <dd>{singlecharacter.hair_color}</dd>
-        <dt>Cost: </dt>
+        <dt>Eye Color: </dt>
         <dd>{singlecharacter.eye_color} </dd>
-        <dt>Passengers:</dt>
+        <dt>Gender:</dt>
         <dd>{singlecharacter.gender}</dd>
       </dl>
     </>

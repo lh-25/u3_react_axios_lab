@@ -8,18 +8,18 @@ export default function planetPage ({planets}) {
 
   return !singleplanet ? (<h1>planet Not Found!</h1>) : (
     <>
-      <h1>planet: {singleplanet.name}</h1>
+      <h1>Planet: {singleplanet.name}</h1>
       <h2>Details</h2>
       <dl>
-      <dt>Crew:</dt> 
+      <dt>Climate</dt> 
       <dd>{singleplanet.climate} </dd>
-        <dt>Model:</dt>
+        <dt>Terrian:</dt>
         <dd> {singleplanet.terrain}</dd>
-        <dt>Manufacture:</dt>
+        <dt>Rotation Period:</dt>
         <dd>{singleplanet.rotation_period}</dd>
-        <dt>Cost: </dt>
+        <dt>Population: </dt>
         <dd>{singleplanet.population} </dd>
-        <dt>Passengers:</dt>
+        <dt>Obital Period:</dt>
         <dd>{singleplanet.orbital_period}</dd>
       </dl>
     </>
