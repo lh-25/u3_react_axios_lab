@@ -2,8 +2,8 @@ import Nav from "./Nav"
 export default function Header () {
 
 return (
-  <Header>
+  <header>
     <Nav />
-  </Header>
+  </header>
 ) 
 }
